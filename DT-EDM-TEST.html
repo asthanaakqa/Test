@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+    
+    <title>A Simple Responsive HTML Email</title>
+    <style type="text/css">
+        table {
+            margin: 0px auto;            
+        }
+      
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            width: 100%!important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #eeeeee;
+            min-width: 100%!important;
+        }
+        
+        .content {
+            width: 100%;
+            max-width: 600px;
+            border: 1px solid red;
+        }
+        
+        table td {
+            border-collapse: collapse;
+        }
+        /* These are our tablet/medium screen media queries */
+        
+          @-ms-viewport{ width: device-width; }
+        
+        @media screen and (max-width: 666px) {
+            
+            /* Default img  */
+            img {
+                border: 0px !important;
+            }
+            
+            /* Hide stuff */
+            *[class="hide"] {
+                display: none !important;
+            }
+            
+            /* This sets elements to 100% width and fixes the height issues too, a god send */
+            *[class="100p"] {
+                width: 100% !important;
+                height: auto !important;
+                font-size:16px;
+                text-align: center;
+                display: block;
+            }
+            
+            /* Centers content on mobile */
+            *[class="center"] {
+                text-align: center !important;
+                width: 100% !important;
+                height: auto !important;
+            }
+            
+            /* 100percent width section  */
+            *[class="100pad"] {
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+   <!-- Outter wrapper-->
+    <table  align="center"  width="100%" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+        <td>  
+        <!-- Content wrapper-->
+        <table width="600" align="center" border="1" cellspacing="0" cellpadding="0" class="100p">
+                    <tr>
+                        <td bgcolor="#085bab">
+                            <table align="center" width="548" border="0" cellspacing="0" cellpadding="0" class="100p">
+                                <tr>
+                                    <td align="right" style="color:#FFFFFF;"> Can't see this email? <a href="#" style="color:#FFFFFF;">View online </a> </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" bgcolor="#085bab">
+                            <table width="100%" border="1" cellspacing="0" cellpadding="0" class="100p">
+                                <tr>
+                                    <td width="270"> <img src="http://i.imgur.com/yc6kxie.png" alt="logo"> </td>
+                                    <td style="vertical-align:bottom;">
+                                        <table align="right" border="0" cellspacing="0" cellpadding="0" width="270" class="100p">
+                                            <tr>
+                                                <td class="hide" align="right" style="font-size:16px; color:#FFFFFF;"> <a href="#" style="color:#FFFFFF; text-decoration:none; ">Products</a> </td>
+                                                <td class="hide" align="right" style="font-size:16px; color:#FFFFFF;"> <a href="#" style="color:#FFFFFF; text-decoration:none;">Services</a> </td>
+                                                <td class="hide" align="right" style="font-size:16px; color:#FFFFFF;"> <a href="#" style="color:#FFFFFF; text-decoration:none;">Stores</a> </td>
+                                                <td class="hide" align="right" style="font-size:16px; color:#FFFFFF;"> <a href="#" style="color:#FFFFFF; text-decoration:none;">Contact Us</a> </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#085bab" height="20"> </td>
+                    </tr>
+                    <!-- Header image wrapper -->
+                    <tr>
+                        <td><img class="100p" src="http://imgur.com/DD2EWGV.png" alt=""></td>
+                    </tr>
+                    <!-- Header image wrapper -->
+                    
+                    <!-- Para block -->
+                    <tr>
+                        <td style="background-color:#ffffff;" height="40"></td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#ffffff;">
+                            <table width="500" border="0" cellspacing="0" cellpadding="0" align="center" class="w320">
+                                <tr>
+                                    <td height="50" class="100p">Create the ideal work environment for your business using our quality commercial-grade furniture.</td>
+                                </tr>
+                                <tr>
+                                    <td height="40" class="100p">Choose from our wide range of durable products, all at the lowest prices.</td>
+                                </tr>
+                                <tr>
+                                    <td  class="100p">Speak to our business specialists in-store about our bulk buy options on selected products.</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- end Para block -->
+                    
+                    <!-- Block spacer-->
+                    <tr>
+                        <td style="background-color:#ffffff;" height="30"> </td>
+                    </tr>
+                    <!-- end Block spacer-->
+                    
+                    <tr>
+                        <td> <img class="100p" src="http://i.imgur.com/00Nm7j0.png" alt="desk" border="0"> </td>
+                    </tr>
+                    
+                    <!-- Block spacer-->
+                    <tr>
+                        <td style="background-color:#ffffff;" height="20"> </td>
+                    </tr>
+                    <!-- end Block spacer-->
+                    
+                    <tr>
+                        <td> <img class="100p" src="http://i.imgur.com/QmfRUiN.png" alt="ergonimic-chair" border="0"> </td>
+                    </tr>
+                    
+                    <!-- Block spacer-->
+                    <tr>
+                        <td style="background-color:#ffffff;" height="20"> </td>
+                    </tr>
+                    <!-- end Block spacer-->
+                    
+                    <tr>
+                        <td> <img class="100p" src="http://i.imgur.com/Fho2a9d.png" alt="" border="0"> </td>
+                    </tr>
+                    
+                    <!-- Block spacer-->
+                    <tr>
+                        <td style="background-color:#ffffff;" height="80"> </td>
+                    </tr>
+                    <!-- end Block spacer-->
+                     
+                    <!-- Block spacer-->
+                    <tr>
+                        <td height="10"> </td>
+                    </tr>
+                    <!-- end Block spacer-->
+                    
+                    <!-- Footer wrapper-->
+                    <tr>
+                     <td>
+                       <table width="92%"  align="center" border="0" cellspacing="0" cellpadding="0" class="100p">
+                                <tr>
+                                    <td>
+                                     <table  align="center" cellspacing="0" cellpadding="0" class="100p">
+                                          <tr>
+                                              <td><img src="https://imgur.com/Yvl7yTc.png" alt="Free Click & Collect" style="vertical-align:bottom;"></td>
+                                              
+                                              <td width="4%"></td>
+                                              
+                                              <td><a href="#" style="font-size:14px; font-weight:bold; color:#005bab; text-decoration:none;"> Free Click & Collect</a></td>
+                                          </tr>
+                                      </table>
+                                      
+
+                                    </td>
+                                    
+                                    <td>
+                                    <table  align="center" border="0" cellspacing="0" cellpadding="0" class="100p">
+                                          <tr>
+                                              <td><img src="https://imgur.com/5L9NQzu.png" alt="Free Next Day Delivery" style="vertical-align:middle;"></td>
+                                               
+                                               <td width="3%"></td>
+                                              
+                                              <td><a href="#" style="font-size:14px; font-weight:bold; color:#005bab; text-decoration:none;">Free Next Day Delivery</a></td>
+                                          </tr>
+                                      </table>
+
+                                    </td>
+                                    <td>
+                                    <table  align="center" border="0" cellspacing="0" cellpadding="0" class="100p">
+                                          <tr>
+                                              <td ><img src="http://i.imgur.com/SorJZsb.png" alt="Same Day Delivery" style="vertical-align:middle;"></td>
+                                              
+                                               <td width="5%"></td>
+                                               
+                                              <td><a href="#" style="font-size:14px; font-weight:bold; color:#005bab; text-decoration:none;">Same Day Delivery</a></td>
+                                          </tr>
+                                      </table>
+
+                                    </td>
+                                
+                    
+                    </tr>
+                    
+                  
+                     
+                    </table>
+                         
+                     </td>
+                    </tr>
+                    <!-- end Footer wrapper-->
+                    
+                  
+                    
+                    <!-- Block spacer-->
+                    <tr>
+                        <td height="80"> </td>
+                    </tr>
+                    <!-- end Block spacer-->
+                    
+                      <!-- SocilNetwork wrapper-->
+                    <tr>
+                        <td align="center">
+                            <table width="50%" align="center" border="0" cellspacing="0" cellpadding="0" class="100p">
+                                <td><a href="#" style="font-size:14px; font-weight:bold; color:#005bab; text-decoration:none;">Connect with us</a></td>
+                                <td>
+                                <a href="#" style="font-size:14px; font-weight:bold; color:#005bab; text-decoration:none;">
+                                <img src="https://imgur.com/b2HjAyE.png" alt="">
+                                </a>
+                                </td>
+                                <td><a href="#" style="font-size:14px; font-weight:bold; color:#005bab; text-decoration:none;">
+                                <img src="https://imgur.com/PO0njz3.png" alt="">
+                                </a></td>
+                                <td><a href="#" style="font-size:14px; font-weight:bold; color:#005bab; text-decoration:none;">
+                                <img src="https://imgur.com/VIUAGmw.png" alt="">
+                                </a></td>
+                                <td><a href="#" style="font-size:14px; font-weight:bold; color:#005bab; text-decoration:none;">
+                                <img src="https://imgur.com/Q3iQX0c.png" alt="">
+                                </a></td>
+                                <td><a href="#" style="font-size:14px; font-weight:bold; color:#005bab; text-decoration:none;">
+                                <img src="https://imgur.com/deHxMmM.png" alt="">
+                                </a></td>
+                                <td><a href="#" style="font-size:14px; font-weight:bold; color:#005bab; text-decoration:none;">
+                                <img src="https://imgur.com/hP2fAzG.png" alt="">
+                                </a></td>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- end SocilNetwork wrapper-->
+                    
+                    <!-- Block spacer-->
+                    <tr>
+                        <td height="10"> </td>
+                    </tr>
+                    <!-- end Block spacer-->
+                    
+                    <!--Divider-->
+                    <tr>
+                        <td>
+                        <table width="50%" align="center" border="0" cellspacing="0" cellpadding="0" class="100p">
+                        <tr>
+                        <td>
+                        <img src="https://imgur.com/xkEpMFJ.png" alt=""></td>
+                        </tr>
+                        </td>
+                    </tr>
+                     <!--end Divider-->
+                     
+                     <!-- Footer nav wrapper-->
+                        <tr>
+                         <td align="center">
+                            <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0" class="100p">
+                                 <tr>
+                                     <td align="center" ><a href="#" style="font-size:13px;  color:#666766; text-decoration:none;">Terms of use </a> </td>
+                                     <td align="center" width="3%" style="font-size:13px;  color:#666766; "> |</td>
+                                     <td align="center"><a href="#" style="font-size:13px;  color:#666766; text-decoration:none;">Manage My Preferences</a></td>
+                                      <td align="center" width="3%" style="font-size:13px;  color:#666766; "> |</td>
+                                     <td align="center"><a href="#" style="font-size:13px;  color:#666766; text-decoration:none;">Unsubscribe </a> </td>
+                                      <td align="center" width="3%" style="font-size:13px;  color:#666766; "> |</td>
+                                     <td align="center"><a href="#" style="font-size:13px;  color:#666766; text-decoration:none;">Feedback </a> </td>
+                                 </tr>
+                             </table>
+                         </td>
+                     </tr>
+                     
+                      <!-- end Footer nav wrapper-->
+       
+        
+        
+</table>
+        <!--end Content wrapper-->
+        </td>
+        </tr>
+    </table>
+    <!-- end Outter wrapper-->
+</body>
+
+</html>
